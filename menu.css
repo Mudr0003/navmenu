@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans');
+/***************************************************
+Add your Google Fonts
+Update ALL the named colours to create a monochromatic scheme
+Style the menus - one horizontally and one vertically
+Add the hover/active effects to your menu items
+***************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    /* ADD the Google sans-serif font to this font stack */
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+}
+html, body{
+    background-color: #C5EBBE;
+}
+h1{
+    font-size: 6.854rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: "Droid Serif", 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+    padding: 1rem 2rem;
+}
+h2{
+    font-size: 4.23rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: "Droid Serif", 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    padding: 1rem 2rem;
+}
+nav li{
+    font-size: 2.618rem;
+}
+p{
+    font-size: 1.618rem;
+    padding: 1rem 2rem;
+}
+.wrapper{
+    max-width: 1400px; 
+    width: 80%;
+    margin: 0 auto;/* centers content*/
+    background-color: #66AE59;
+    color: #5A6B57;
+}
+header{
+    border-bottom: 0.8rem solid #C5EBBE;
+    background-color: #5A6B57;
+    color: #C5EBBE;
+}
+
+
+/*add fonts corolors above!!!!!*/
+/* monoch font color choice
+C5EBBE
+66AE59
+859E80
+89EB78
+5A6B57
+*/
+
+/*horizontal menu*/
+
+.menu-h{
+    width: 100%; /*100% of the 80% wrapper*/
+}
+   
+.menu-h li{
+        list-style: none;
+        float: left;
+        width: 20%;
+        box-sizing: 0;
+        
+        background-color: #C5EBBE;
+        border-radius: 50%;
+        text-align: center;  
+        margin-top:25px;
+}
+
+.menu-h a,
+.menu-h a:link,
+.menu-h a:visited{
+            /* style the anchors to fill the entire width of the li 
+            make sure there is padding around your text */
+        color: #5A6B57;
+        display: block;
+        text-decoration: none;
+}
+
+.menu-h a:hover,
+.menu-h a:active{
+        background-color: #5A6B57;
+        border-radius: 50%;
+        color: #C5EBBE;  
+}
+
+
+/* verticle menu */
+
+.menu-v{
+       width: 20%; /* using percent of parent*/
+       float:left;
+       margin-top: 8.23rem;    
+}
+    
+.menu-v li{
+        background-color: #66AE59;
+        text-align: center;  
+        list-style:none;
+        border-top-style:groove;
+        border-top-color:#5A6B57;
+        margin-top: 10px;
+}
+
+.menu-v li:last-child{
+        border-bottom-style:groove;
+        border-bottom-color:#5A6B57;
+        padding-bottom: 10px;       
+}
+
+.menu-v a,
+.menu-v a:link,
+.menu-v a:visited{    
+        color: #C5EBBE;
+        display: block;
+        text-decoration: none;
+}
+
+.menu-v a:hover,
+.menu-v a:active{
+        background-color: #66AE59;
+        color: #5A6B57;      
+}
+
+main{
+    width:80%;
+    float: right;
+}
+
+footer{
+    clear:both;
+}
